@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Thasadith:400,400i,700,700i" rel="stylesheet">
+    <style>
+        body{
+            padding: 40px;
+            background: #00B4FF;
+            font-family: 'Thasadith', sans-serif;
+        }
+        h1{
+            text-align: center;
+            color: white;
+            font-family: fantasy;
+            font-weight: 100;
+        }
+        .search_container{
+            display: flex;
+            justify-content: space-around;
+        }
+        #search_bar{
+            width: 80%;  
+            height: 40px;
+            font-size: 20px;
+        }
+        .adventure_container{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            margin: 40px;
+        }
+        .adventure{
+            width: 120px;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            text-align: center;
+            background: white;
+            font-weight: bold;
+            
+        }
+        .support{
+            color: white;
+            background-color: blue;
+        }
+        .tank{
+            color: white;
+            background-color: green;
+        }
+        .damage{
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Overwatch Heroes</h1>
+    <div class='search_container'><input type='text' id='search_bar'></div>
+    <div class='adventure_container'>
+        <div class='adventure support'>Ana</div>
+        <div class='adventure damage'>Ashe</div>
+        <div class='adventure damage'>Bastion</div>
+        <div class='adventure support'>Brigitte</div>
+        <div class='adventure tank'>D.Va</div>
+        <div class='adventure damage'>Doomfist</div>
+        <div class='adventure damage'>Genji</div>
+        <div class='adventure damage'>Hanzo</div>
+        <div class='adventure damage'>Junkrat</div>
+        <div class='adventure support'>Lucio</div>
+        <div class='adventure damage'>Mccree</div>
+        <div class='adventure damage'>Mei</div>
+        <div class='adventure support'>Mercy</div>
+        <div class='adventure support'>Moira</div>
+        <div class='adventure tank'>Orisa</div>
+        <div class='adventure damage'>Pharah</div>
+        <div class='adventure damage'>Reaper</div>
+        <div class='adventure tank'>Reinhardt</div>
+        <div class='adventure tank'>Roadhog</div>
+        <div class='adventure damage'>Soldier:76</div>
+        <div class='adventure damage'>Sombra</div>
+        <div class='adventure damage'>Symmetra</div>
+        <div class='adventure damage'>Torbjorn</div>
+        <div class='adventure damage'>Tracer</div>
+        <div class='adventure damage'>Widowmaker</div>
+        <div class='adventure tank'>Winston</div>
+        <div class='adventure tank'>Wrecking Ball</div>
+        <div class='adventure tank'>Zarya</div>
+        <div class='adventure support'>Zenyatta</div>
+    </div>
+    <script>
+        var adventureList = [];
+        var adventures = document.getElementsByClassName('adventure');
+        for (var i = 0; i < adventures.length; i++) {
+            var adventureName = adventures[i];
+            adventureList.push(adventureName.innerHTML); 
+        }
+        
+        var searchBar = document.getElementById('search_bar');
+        searchBar.addEventListener('keyup', function(event){
+            var text = searchBar.value;
+            for (var i = 0; i < adventures.length; i++) {
+                if (adventureList[i].indexOf(text) < 0) {
+                    adventures[i].style.display = 'None';
+                }
+                else {
+                    adventures[i].style.display = 'Block';
+                }
+            }
+        });
+    </script>
+</body>

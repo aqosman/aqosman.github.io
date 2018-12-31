@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Abdul Qawee Osman</title>
+        <link rel="shortcut icon" type="image/ico" href="images/logo.png">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .written
+
+        </style>
+    </head>
+    <body id="top">
+        <header>
+            <h2><a href="#top" target="_blank"><img src="images/logo.png" width=100></a></h2>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#written_pieces">Portfolio</a></li>
+                    <li><a href="#social-media">Contact & Resume</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <div id="hero">
+            <div class="background-image"></div>
+            <h1>Abdul Q. Osman</h1>
+            <h3>Generative. Resilient.</h3>
+            <a href="#about" class="btn" target="_blank">Learn More</a>
+        </div>
+        <!-- ********************************************************** -->
+        <div id="about">
+            <!--<h3 class="title">About Me</h3>-->
+            <div id="twocols">
+                <div class="about-img"><img src="images/abdul2crop.jpg" alt="Abdul"></div>
+                <div class="about-bio">
+                    <h1>Hello!</h1>
+                    <h3>My name is Abdul.</h3>
+                    <p><br>because all I'm trying to do is be relentlessly myself. This website is for me.</p>
+                </div>
+                <P>&nbsp;</P>
+            </div>
+        </div>
+        <div id="about2">
+            <div class="about-img2"><img src="images/logo.png" alt="Zenith"></div>
+            <div id="threecols">
+                <div class="about-bio2-1">
+                    <p><br>I’m trying to be famous writer one day and I heard having an icon or symbol helps. Tryna build that clout, ya know, or whatever people say these days. And because I’m an English major, I like to add layers of meaning to a logo I made for fun one night.</p><br> The green and red is meant to represent my heritage as a Bangladeshi-American womxn (the x is used to be inclusive of all womxn and to acknowledge that being a womxn does not mean conforming to cis-heteronormative standards). 
+                </div>
+                <div class="about-bio2-2">
+                    <p><br>Yes, I’m a cliche diaspora kid that writes long metaphors about missing a place I never been, but also don’t act all elitist and mighty because you’re a super aware diaspora or first generation kid. Remember we all grew up differently, so we are not at the same level of understanding social issues and cultures. I acknowledge that I still got a lot to learn and do. The water lily(shapla) is the national flower of Bangladesh but also I’m all about growth and beauty, which flowers are all about.</p>
+                </div>
+                <div class="about-bio2-3">
+                    <p><br>The closed eyes are meant to show the story that eyes can tell, even closed eyes speak to you. Also, falsies are fun. I angled the eyes and flower to somewhat show an individual holding or smelling the flower because humanity should embrace nature, embrace what is around us, and embrace what is within themselves Yes, even the font means something, because as a kid, I would write random shit in spirals since all the other kids had nice writing and I didn’t, so I wanted to one up the brats in my class.</p>
+                </div>
+            </div>
+            <P>&nbsp;</P>
+        </div>
+        <hr>
+        <!-- ********************************************************** -->
+        <div id="written_pieces" class="gallery">
+            <h1>Portfolio</h1>
+            <ul class="grid">
+                <li class="prose" style="background-image: url('images/blurbanquet.jpg'); background-size: cover; background-repeat: no-repeat;"><a href="#" target="_blank"><h1 class="wrtg_title">Mentorship Program</h1></a></li>
+                <li class="prose" style="background-image: url('images/floating.jpg'); background-size: cover; background-repeat: no-repeat"><a href="#" target="_blank"><h1 class="wrtg_title">Festival</h1></a></li>
+                <li class="prose" style="background-image: url('images/hero.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"><a href="#" target="_blank"><h1 class="wrtg_title">JavaScript Game</h1></a></li>
+                <li class="prose" style="background-image: url('images/vocab.png'); background-size: cover; background-repeat: no-repeat"><a href="#" target="_blank"><h1 class="wrtg_title">Vocabulary Cards</h1></a></li>
+                <li class="prose" style="background-image: url('images/search.png'); background-position: center;background-repeat: no-repeat; "><a href="#" target="_blank"><h1 class="wrtg_title">Search Filter</h1></a></li>
+                <li class="prose" style="background-image: url('images/blacklogo.png'); background-position: center; background-repeat: no-repeat"><a href="#" target="_blank"><h1 class="wrtg_title">Flyer Designs</h1></a></li>
+            </ul>
+        </div>
+        <hr>
+        <!-- ********************************************************** -->
+        <footer id="social-media">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/abdul-osman-13a54516a/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#" target="_blank"><i class="far fa-file"></i></a></li>
+            </ul>
+            <p>&copy;<script>document.write(new Date().getFullYear())</script> Abdul Qawee Osman</p>
+        </footer>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('a[href^="#"]').on('click',function (e) {e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top-300
+                }, 900, 'swing', function () {
+                    window.location.hash = target-300;
+                });
+                   });
+        });
+        </script>
+    </body>
+</html>
