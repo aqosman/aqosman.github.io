@@ -37,7 +37,7 @@
                 <div class="about-bio">
                     <h1>Hello!</h1>
                     <h3>My name is Abdul.</h3>
-                    <p><br>Born and raised in Orange County, CA. I'm currently a student studying Informatics (and soon to be specializing in Human Computer Interaction) at the University of California, Irvine.</p>
+                    <p><br>Born and raised in Orange County, CA.<br><br> I'm currently a third-year student studying Informatics (and soon to be specializing in Human Computer Interaction) at the University of California, Irvine.</p>
                 </div>
                 <P>&nbsp;</P>
             </div>
@@ -46,13 +46,13 @@
             <div class="about-img2"><img src="images/logo.png" alt="AQO"></div>
             <div id="threecols">
                 <div class="about-bio2-1">
-                    <p><br>I’m trying to be famous writer one day and I heard having an icon or symbol helps. Tryna build that clout, ya know, or whatever people say these days. And because I’m an English major, I like to add layers of meaning to a logo I made for fun one night.</p><br> The green and red is meant to represent my heritage as a Bangladeshi-American womxn (the x is used to be inclusive of all womxn and to acknowledge that being a womxn does not mean conforming to cis-heteronormative standards). 
+                    <p><br>First things first, I am a HUGE tech guy! Growing up, I've always been surrounded by electronics and videogames thanks to my older brother. My first console was a Sega Dreamcast (where I was pretty unbeatable in Power Stone) and my first operating system was the good ol' Windows XP. </p><br> A good portion of my childhood and teenage years was spent playing MMO's like Runes of Magic (I couldn't afford the WoW subscription) or console classics like the Final Fantasy series. Nowadays though, I only play Overwatch or Smash Ultimate if I'm ever allotted the time.
                 </div>
                 <div class="about-bio2-2">
-                    <p><br>Yes, I’m a cliche diaspora kid that writes long metaphors about missing a place I never been, but also don’t act all elitist and mighty because you’re a super aware diaspora or first generation kid. Remember we all grew up differently, so we are not at the same level of understanding social issues and cultures. I acknowledge that I still got a lot to learn and do. The water lily(shapla) is the national flower of Bangladesh but also I’m all about growth and beauty, which flowers are all about.</p>
+                    <p><br>I must admit, being a student while trying to balance outside work like creating your own portfolio is difficult if you lack the passion for it. Prior to web development, I was studying to become a backend developer as a computer science student but felt too restricted. I wanted to tap into both 'stem' and visual design so I made the switch to study Informatics.<br><br>I've never looked back since then because learning web development and visibly seeing the products, software, and other fruits of labor you make feels so rewarding!</p>
                 </div>
                 <div class="about-bio2-3">
-                    <p><br>The closed eyes are meant to show the story that eyes can tell, even closed eyes speak to you. Also, falsies are fun. I angled the eyes and flower to somewhat show an individual holding or smelling the flower because humanity should embrace nature, embrace what is around us, and embrace what is within themselves Yes, even the font means something, because as a kid, I would write random shit in spirals since all the other kids had nice writing and I didn’t, so I wanted to one up the brats in my class.</p>
+                    <p><br>As I develop into a professional, I intend to act upon the two words indicated on my logo - generative and resilient. I want to continuously produce meaningful, intentional content and carry the drive to always move forward as an individual and as a developer.<br><br>If I ever need to catch a break though, odds are you can probably find me doing a photoshoot somewhere or editing those pictures on Lightroom & Photoshop.</p>
                 </div>
             </div>
             <P>&nbsp;</P>
@@ -61,6 +61,7 @@
         <!-- ********************************************************** -->
         <div id="written_pieces" class="gallery">
             <h1>Portfolio</h1>
+            <p style="color:white;">The following content was created with various software such as Brackets and Sublime Text for web development and Adobe Photoshop and Adobe Illustrator for graphic designing. </p>
             <ul class="grid">
                 <li class="prose" style="background-image: url('images/blurbanquet.jpg'); background-size: cover; background-repeat: no-repeat;"><a href="Amazing_AMP/index.html" target="_blank"><h1 class="wrtg_title">Mentorship Program</h1></a></li>
                 <li class="prose" style="background-image: url('images/floating.jpg'); background-size: cover; background-repeat: no-repeat"><a href="Lights_festival/index.html" target="_blank"><h1 class="wrtg_title">Festival</h1></a></li>
@@ -70,7 +71,7 @@
                 <li class="prose" style="background-image: url('images/blacklogo.png'); background-position: center; background-repeat: no-repeat"><a href="images/flyers.pdf" target="_blank"><h1 class="wrtg_title">Flyer Designs</h1></a></li>
             </ul>
         </div>
-        <hr>
+
         <!-- ********************************************************** -->
         <footer id="social-media">
             <ul>
@@ -82,10 +83,8 @@
         <script type="text/javascript">
             $(document).ready(function(){
                 $('a[href^="#"]').on('click',function (e) {e.preventDefault();
-
                 var target = this.hash;
                 var $target = $(target);
-
                 $('html, body').stop().animate({
                     'scrollTop': $target.offset().top-300
                 }, 900, 'swing', function () {
